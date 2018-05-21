@@ -1,0 +1,29 @@
+<mjml>
+  <mj-body>
+    <mj-section background-color="#f3f3f3">
+      <mj-column>
+        <mj-lorem-picsum width="162px"></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-divider  />
+    <mj-section background-color="#f3f3f3">
+      <mj-column>
+        <mj-image width="170px" src="http://i.imgur.com/nwNZ0TW.png"></mj-image>
+      </mj-column>
+      <mj-column>
+        <mj-text font-weight="bold" align="center" font-size="24px" color="#000" font-family="helvetica">Article Title</mj-text>
+        <mj-text align="center" font-size="15px" color="#000" font-family="helvetica">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet ipsum consequat.</mj-text>
+        <mj-button align="center" background-color="#8ccaca" border-radius="40px" font-family="helvetica" font-size="12px">READ MORE</mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-divider  />
+    <mj-section background-color="#f3f3f3">
+      <mj-column width="33%" vertical-align="middle">
+        <mj-text font-weight="bold" align="center" font-size="24px" color="#000" font-family="helvetica">Hello World!</mj-text>
+      </mj-column>
+      <mj-column width="67%" vertical-align="middle">
+        <mj-chart chs="700x200" cht="lc" chd="s:cEAELFJHHHKUju9uuXUc" chco="76A4FB" chls="2.0,0.0,0.0" chxt="x,y" chxl="0:|0|1|2|3|4|5|1:|0|50|100" chg="20,50"></mj-chart>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

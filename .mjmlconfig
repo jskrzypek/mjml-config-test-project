@@ -1,0 +1,6 @@
+{
+  "packages": [
+    "mjml-chart",
+    "./components/mjml-lorem-picsum.js"
+  ]
+}
