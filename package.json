@@ -4,15 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npm run setup:mjml",
+    "setup:mjml": "npm run clone:mjml && npm run checkout:mjml && npm run install:mjml && npm run build:mjml",
+    "clone:mjml": "[[ -d ./mjml ]] || git clone https://github.com/jskrzypek/mjml.git mjml",
+    "checkout:mjml": "cd mjml && git checkout mjmlconfig",
+    "install:mjml": "cd mjml && npm install",
+    "build:mjml": "cd mjml && npm run build",
     "test": "mjml ./test.mjml -o test.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "mjml": "file:../mjml/packages/mjml",
+    "mjml": "file:./mjml/packages/mjml",
     "mjml-chart": "^5.0.0",
-    "mjml-core": "file:../mjml/packages/mjml-core",
-    "mjml-validator": "file:../mjml/packages/mjml-validator"
+    "mjml-core": "file:./mjml/packages/mjml-core",
+    "mjml-validator": "file:./mjml/packages/mjml-validator"
   }
 }
